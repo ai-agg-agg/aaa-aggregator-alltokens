@@ -4,10 +4,14 @@
   "description": "alltokens.ru aggregator plugin for aaa",
   "type": "module",
   "main": "./dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "oclif": {
     "hooks": {
-      "init": ["./dist/hooks/init"]
+      "init": [
+        "./dist/hooks/init"
+      ]
     }
   },
   "scripts": {
@@ -16,5 +20,8 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@oclif/core": "^4.0.0"
+  },
+  "dependencies": {
+    "@ai-agg-agg/aaa-sdk": "github:ai-agg-agg/aaa-sdk"
   }
 }
